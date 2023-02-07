@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "2c100230-2f57-427d-9081-692af3ecef95",
+		"name": "WebSocket1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SendBroadcastMsg",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"Alert\",\r\n    \"message\":\"You are doing great!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/broadcast-message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"broadcast-message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
